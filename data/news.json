@@ -1,7 +1,7 @@
 {
   "site": "SecuPulse",
   "title": "AI時代の情報セキュリティ・個人情報漏洩ニュースサイト",
-  "updatedAt": "2026-10-06T07:14:46.203Z",
+  "updatedAt": "2026-10-06T23:27:23.073Z",
   "timezone": "Asia/Tokyo",
   "categories": [
     "AIセキュリティ",
@@ -12,13 +12,13 @@
   ],
   "stats": {
     "total": 48,
-    "aiSecurity": 21,
+    "aiSecurity": 23,
     "personalData": 24,
     "byCategory": {
-      "AIセキュリティ": 21,
+      "AIセキュリティ": 23,
       "個人情報漏洩": 24,
       "規制・ガバナンス": 0,
-      "インシデント対応・被害拡大": 3,
+      "インシデント対応・被害拡大": 1,
       "サプライチェーン／委託先": 0
     }
   },
@@ -57,14 +57,134 @@
   "errors": [],
   "items": [
     {
-      "id": "eb5b8d684b941b44",
-      "title": "複数のAtlassian製品が影響を受ける「クリティカル」脆弱性",
-      "summary": "Atlassianの複数製品が影響を受ける脆弱性「CVE-2026-21589」が明らかとなった。",
+      "id": "2e59468d6a2a640e",
+      "title": "KKR京都くに荘のメールサーバに不正アクセス",
+      "summary": "KKR京都くに荘のメールサーバに不正アクセス",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/07/56406.html",
+      "publishedAt": "2026-10-06T23:05:22.000Z"
+    },
+    {
+      "id": "23a9a7ad8a51a4bc",
+      "title": "九州電子 台湾子会社にランサムウェア攻撃、事業運営に必要なシステム環境の復旧を完了",
+      "summary": "九州電子 台湾子会社にランサムウェア攻撃、事業運営に必要なシステム環境の復旧を完了",
       "insight": "経営示唆: 初動・広報・事業継続の役割分担を確認し、机上訓練の実施時期を見直してください。",
       "category": "インシデント対応・被害拡大",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/07/56405.html",
+      "publishedAt": "2026-10-06T23:05:18.000Z"
+    },
+    {
+      "id": "25a6152b83bb4225",
+      "title": "異なる手法による別の不正アクセスが判明「ニッポンレンタカーアプリ」",
+      "summary": "異なる手法による別の不正アクセスが判明「ニッポンレンタカーアプリ」",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/07/56403.html",
+      "publishedAt": "2026-10-06T23:05:11.000Z"
+    },
+    {
+      "id": "94593a8ce5ab9046",
+      "title": "日経BP従業員のメールアカウントに不正アクセス、26件の個人情報が漏えいした可能性",
+      "summary": "日経BP従業員のメールアカウントに不正アクセス、26件の個人情報が漏えいした可能性",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/07/56402.html",
+      "publishedAt": "2026-10-06T23:05:08.000Z"
+    },
+    {
+      "id": "b2d5be04a473becf",
+      "title": "なりすましメールで取引先に金銭的な被害も ～ 小田原エンジニアリング従業員のメールアカウントに不正アクセス",
+      "summary": "なりすましメールで取引先に金銭的な被害も ～ 小田原エンジニアリング従業員のメールアカウントに不正アクセス",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/07/56400.html",
+      "publishedAt": "2026-10-06T23:05:02.000Z"
+    },
+    {
+      "id": "49257c782823d2ef",
+      "title": "タイムズカー、焼肉きんぐなど数十社情報漏えい総まとめ 公表が相次ぐ3週間に何が起きたのか",
+      "summary": "カーシェアリングサービス「タイムズカー」から約660万件のアカウント情報が流出した。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2610/07/news020.html",
+      "publishedAt": "2026-10-06T22:00:00.000Z"
+    },
+    {
+      "id": "eba5a03b2dc05867",
+      "title": "マイクロソフト、VS CodeにAIモデルのオーケストレーションで高品質低コストなAIを実現する「HydraFusion」をプレビュー実装",
+      "summary": "マイクロソフトは9月30日付けでリリースされたVisual Studio Code 1.",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/vs_codeaiaihydrafusion.html",
+      "publishedAt": "2026-10-06T15:23:56.000Z"
+    },
+    {
+      "id": "66e0b3e18f525192",
+      "title": "同県サイトで公開した地区防災計画のPDFに個人情報 - 岡山県",
+      "summary": "岡山県は、同県サイトに個人情報を参照できるPDFファイルを誤って掲載していたことを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
       "source": "Security NEXT",
-      "url": "https://www.security-next.com/191078",
-      "publishedAt": "2026-10-06T05:06:11.000Z"
+      "url": "https://www.security-next.com/190450",
+      "publishedAt": "2026-10-06T14:44:21.000Z"
+    },
+    {
+      "id": "abfc9f02cea44e31",
+      "title": "人事システムから従業員の個人情報が流出した可能性 - 第一ライフG",
+      "summary": "第一ライフグループと第一生命保険は、人事システムが不正アクセスを受け、従業員や退職者に関する個人情報が流出した可能性があることを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/190994",
+      "publishedAt": "2026-10-06T14:14:43.000Z"
+    },
+    {
+      "id": "f6aa240e3bdf0ae3",
+      "title": "FDE（フォワードデプロイドエンジニアリング）によって開発されたAIエージェントの7割は使われず、FDEの名前で単なるコンサルティングが販売されるようになる危険が高まるとガートナーが予測",
+      "summary": "米調査会社のガートナーは、ベンダーのFDE（フォワードデプロイドエンジニアあるいはフォワードデプロイドエンジニアリング）によって開発されたAIエージェントの70％が2028年までに企業に使われずに放棄されるだろう（Gartner Pred…",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/fdeai7fde.html",
+      "publishedAt": "2026-10-06T13:47:52.000Z"
+    },
+    {
+      "id": "2a9462d4ec22de7e",
+      "title": "介護事業者向けの報告書依頼メールで誤送信 - 鳥取県",
+      "summary": "鳥取県は、実績報告書の提出を介護事業者に依頼するメールにおいて送信ミスがあり、メールアドレスが流出したことを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/190687",
+      "publishedAt": "2026-10-06T12:55:43.000Z"
+    },
+    {
+      "id": "657331881a7303e0",
+      "title": "従業員アカウントに不正アクセス、取材先に大量なりすましメール - 日経",
+      "summary": "日本経済新聞社は、従業員が利用していた「Microsoft 365」のアカウントがサイバー攻撃を受けたことを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191072",
+      "publishedAt": "2026-10-06T10:16:17.000Z"
+    },
+    {
+      "id": "0f3b0ebcc9d2d536",
+      "title": "アプリシステムが侵害、顧客情報流出の可能性 - 回転ずしチェーン",
+      "summary": "回転ずしチェーンなどを展開する大起水産は、「大起水産公式アプリ」が不正アクセスを受け、顧客の個人情報が流出した可能性があることを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191070",
+      "publishedAt": "2026-10-06T08:48:01.000Z"
     },
     {
       "id": "3dac2b86491ccfbd",
@@ -85,26 +205,6 @@
       "source": "ITmedia セキュリティ",
       "url": "https://www.itmedia.co.jp/news/article/2610/06/2000002032/",
       "publishedAt": "2026-10-06T03:41:53.000Z"
-    },
-    {
-      "id": "e7e304ea4a0a6cac",
-      "title": "Googleの正規ドメインなのに偽Webサイト パスワード管理ツールまで反応したフィッシングの正体",
-      "summary": "「Googleのドメインだから大丈夫」「CAPTCHAがあるから本物」――そんな判断が通用しないフィッシング事例が報告された。",
-      "insight": "経営示唆: 初動・広報・事業継続の役割分担を確認し、机上訓練の実施時期を見直してください。",
-      "category": "インシデント対応・被害拡大",
-      "source": "ITmedia セキュリティ",
-      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/06/news029.html",
-      "publishedAt": "2026-10-06T02:00:00.000Z"
-    },
-    {
-      "id": "deb3b227e1e4d4f5",
-      "title": "JetBrains、6製品で脆弱性57件を修正 - 重要度「クリティカル」も",
-      "summary": "JetBrainsは、開発環境やプロジェクト管理製品など複数の製品において脆弱性を修正したことを明らかにした。",
-      "insight": "経営示唆: 初動・広報・事業継続の役割分担を確認し、机上訓練の実施時期を見直してください。",
-      "category": "インシデント対応・被害拡大",
-      "source": "Security NEXT",
-      "url": "https://www.security-next.com/191058",
-      "publishedAt": "2026-10-06T01:33:04.000Z"
     },
     {
       "id": "da2288b6fcf7e65a",
@@ -287,46 +387,6 @@
       "publishedAt": "2026-10-04T23:05:13.000Z"
     },
     {
-      "id": "6032ed36c1fb358a",
-      "title": "LEAN BODY が利用する分析ツール「Metabase」の脆弱性を悪用した不正アクセス",
-      "summary": "LEAN BODY が利用する分析ツール「Metabase」の脆弱性を悪用した不正アクセス",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ScanNetSecurity",
-      "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56382.html",
-      "publishedAt": "2026-10-04T23:05:10.000Z"
-    },
-    {
-      "id": "371311b59e800e2e",
-      "title": "東産業 公式サイトにwp2shell を悪用した不正アクセス",
-      "summary": "東産業 公式サイトにwp2shell を悪用した不正アクセス",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ScanNetSecurity",
-      "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56381.html",
-      "publishedAt": "2026-10-04T23:05:07.000Z"
-    },
-    {
-      "id": "75cc431264b8ae62",
-      "title": "日本大学の計 5 名の教員アカウントに不正アクセス、スパムメール送信の踏み台に",
-      "summary": "日本大学の計 5 名の教員アカウントに不正アクセス、スパムメール送信の踏み台に",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ScanNetSecurity",
-      "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56380.html",
-      "publishedAt": "2026-10-04T23:05:05.000Z"
-    },
-    {
-      "id": "0163872247100a08",
-      "title": "ECサイト「ビールの縁側」に不正アクセス、9 名のカード情報が漏えいした可能性",
-      "summary": "ECサイト「ビールの縁側」に不正アクセス、9 名のカード情報が漏えいした可能性",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ScanNetSecurity",
-      "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56379.html",
-      "publishedAt": "2026-10-04T23:05:02.000Z"
-    },
-    {
       "id": "14e9b7219344e348",
       "title": "Supabase、1サーバあたり数百万ものSQLiteをホストする「Turso」買収を発表。AIエージェントで加速するDB需要に対応",
       "summary": "PostgreSQLをベースにしたデータベースサービス「Supabase」などを提供しているSupabaseは、SQLiteをベースとしたデータベースサービスを提供する「Turso」を買収したことを発表しました。",
@@ -335,66 +395,6 @@
       "source": "Publickey",
       "url": "https://www.publickey1.jp/blog/26/supabase1sqlitetursoaidb.html",
       "publishedAt": "2026-10-04T13:59:29.000Z"
-    },
-    {
-      "id": "c03b205365711fc1",
-      "title": "本人確認書類の画像流出、対象アカウントは約160万件 - タイムズカー",
-      "summary": "パーク24グループのタイムズモビリティが運営するカーシェアリングサービス「タイムズカー」が外部から侵害され、会員の個人情報が流出した問題で、本人確認書類の流出状況を明らかにした。",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "Security NEXT",
-      "url": "https://www.security-next.com/190989",
-      "publishedAt": "2026-10-02T14:22:15.000Z"
-    },
-    {
-      "id": "c20f1f2915ddf0d7",
-      "title": "荷物問合サービスが侵害、個人情報流出の可能性 - 佐川急便",
-      "summary": "佐川急便は、荷物問い合わせサービスがサイバー攻撃を受け、顧客の個人情報が流出した可能性があることを明らかにした。",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "Security NEXT",
-      "url": "https://www.security-next.com/190952",
-      "publishedAt": "2026-10-02T13:46:44.000Z"
-    },
-    {
-      "id": "057e2859df9c715a",
-      "title": "日本エネルギー経済研究所、不正アクセスの続報 パスポート情報13件の漏えい確認",
-      "summary": "日本エネルギー経済研究所は10月2日、9月に公表した不正アクセス被害について、詳細調査の結果を発表した。",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ITmedia セキュリティ",
-      "url": "https://www.itmedia.co.jp/news/article/2610/02/2000001976/",
-      "publishedAt": "2026-10-02T08:51:33.000Z"
-    },
-    {
-      "id": "a2c61f2acc8f2ce5",
-      "title": "研究用原子炉利用者の身分証明書などが外部流出 - 原子力機構",
-      "summary": "日本原子力研究開発機構は、研究支援サイトがサイバー攻撃を受けたことを明らかにした。",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "Security NEXT",
-      "url": "https://www.security-next.com/190957",
-      "publishedAt": "2026-10-02T08:18:00.000Z"
-    },
-    {
-      "id": "fa47427153afc4a0",
-      "title": "第一生命に不正アクセス 従業員情報12万人分漏えいか 退職者も対象",
-      "summary": "第一ライフグループと第一生命保険が、2社の使う人事システムが不正アクセスを受け、従業員情報約12万人分が漏えいした可能性があると発表した。",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ITmedia セキュリティ",
-      "url": "https://www.itmedia.co.jp/news/article/2610/02/2000001971/",
-      "publishedAt": "2026-10-02T07:49:41.000Z"
-    },
-    {
-      "id": "5e27e207a2931560",
-      "title": "日本トレクスの情報システムに不正アクセス、一部業務が停止",
-      "summary": "日本トレクスの情報システムに不正アクセス、一部業務が停止",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ScanNetSecurity",
-      "url": "https://scan.netsecurity.ne.jp/article/2026/10/02/56377.html",
-      "publishedAt": "2026-10-01T23:05:23.000Z"
     },
     {
       "id": "ec1f0f82a7563743",
