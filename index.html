@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SecuPulse｜AI時代の情報セキュリティ・個人情報漏洩ニュースサイト</title>
+    <meta
+      name="description"
+      content="経営者・上級職向け。AIセキュリティと個人情報漏洩を同比重で扱う、1日1回更新の速報ダッシュボード。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <h1 class="brand">SecuPulse</h1>
+          <p class="tagline">
+            AI時代の情報セキュリティ・個人情報漏洩ニュースサイト。<br />
+            経営者・上級職向けに、速報・要約・出典リンクをダッシュボードで提供します。
+          </p>
+        </div>
+        <div class="meta-pill">最終更新 <strong id="updatedAt">—</strong></div>
+      </header>
+
+      <section class="stats" aria-label="概況">
+        <article class="stat">
+          <div class="label">掲載ニュース</div>
+          <div class="value" id="statTotal">—</div>
+          <div class="hint">直近収集分（自動更新）</div>
+        </article>
+        <article class="stat">
+          <div class="label">AIセキュリティ</div>
+          <div class="value" id="statAi">—</div>
+          <div class="hint">同比重の主軸カテゴリ</div>
+        </article>
+        <article class="stat">
+          <div class="label">個人情報漏洩</div>
+          <div class="value" id="statLeak">—</div>
+          <div class="hint">同比重の主軸カテゴリ</div>
+        </article>
+        <article class="stat">
+          <div class="label">その他カテゴリ</div>
+          <div class="value" id="statOther">—</div>
+          <div class="hint">規制・対応・サプライチェーン</div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>カテゴリフィルタ</h2>
+        </div>
+        <div class="filters" id="filters"></div>
+      </section>
+
+      <div class="grid">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>本日の速報ボード</h2>
+          </div>
+          <div class="news-list" id="newsList">
+            <div class="empty">読み込み中…</div>
+          </div>
+        </section>
+
+        <aside class="side-stack">
+          <section class="panel">
+            <div class="panel-head">
+              <h2>カテゴリ分布</h2>
+            </div>
+            <div class="cat-bars" id="catBars"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h2>収集ソース</h2>
+            </div>
+            <ul class="source-list" id="sourceList"></ul>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h2>運用メモ</h2>
+            </div>
+            <ul class="note-list">
+              <li>毎日1回、GitHub Actions が公開RSSを収集して更新します。</li>
+              <li>各記事は「タイトル＋1行要約＋経営示唆」と出典リンクを掲載します。</li>
+              <li>独自取材ではなく公開情報のキュレーションです。判断は原文を優先してください。</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+
+      <footer class="footer">
+        <span>SecuPulse — for executives &amp; senior leaders</span>
+        <a href="https://github.com/office626/SecuPulse" target="_blank" rel="noopener noreferrer"
+          >GitHub</a
+        >
+      </footer>
+    </div>
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,540 @@
+{
+  "site": "SecuPulse",
+  "title": "AI時代の情報セキュリティ・個人情報漏洩ニュースサイト",
+  "updatedAt": "2026-10-06T07:12:45.633Z",
+  "timezone": "Asia/Tokyo",
+  "categories": [
+    "AIセキュリティ",
+    "個人情報漏洩",
+    "規制・ガバナンス",
+    "インシデント対応・被害拡大",
+    "サプライチェーン／委託先"
+  ],
+  "stats": {
+    "total": 48,
+    "aiSecurity": 21,
+    "personalData": 24,
+    "byCategory": {
+      "AIセキュリティ": 21,
+      "個人情報漏洩": 24,
+      "規制・ガバナンス": 0,
+      "インシデント対応・被害拡大": 3,
+      "サプライチェーン／委託先": 0
+    }
+  },
+  "sources": [
+    {
+      "id": "jpcert",
+      "name": "JPCERT/CC",
+      "url": "https://www.jpcert.or.jp/rss/jpcert.rdf"
+    },
+    {
+      "id": "ipa",
+      "name": "IPA セキュリティセンター",
+      "url": "https://www.ipa.go.jp/security/rss/alert.rdf"
+    },
+    {
+      "id": "security-next",
+      "name": "Security NEXT",
+      "url": "https://www.security-next.com/feed"
+    },
+    {
+      "id": "scan",
+      "name": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/rss/index.rdf"
+    },
+    {
+      "id": "itmedia-security",
+      "name": "ITmedia セキュリティ",
+      "url": "https://rss.itmedia.co.jp/rss/2.0/security.xml"
+    },
+    {
+      "id": "publickey",
+      "name": "Publickey",
+      "url": "https://www.publickey1.jp/atom.xml"
+    }
+  ],
+  "errors": [],
+  "items": [
+    {
+      "id": "eb5b8d684b941b44",
+      "title": "複数のAtlassian製品が影響を受ける「クリティカル」脆弱性",
+      "summary": "Atlassianの複数製品が影響を受ける脆弱性「CVE-2026-21589」が明らかとなった。",
+      "insight": "経営示唆: 初動・広報・事業継続の役割分担を確認し、机上訓練の実施時期を見直してください。",
+      "category": "インシデント対応・被害拡大",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191078",
+      "publishedAt": "2026-10-06T05:06:11.000Z"
+    },
+    {
+      "id": "3dac2b86491ccfbd",
+      "title": "委託先で侵害、問い合わせ顧客の情報が流出か - 大和証券",
+      "summary": "大和証券は、同社に問い合わせを行った顧客の個人情報が外部に流出した可能性があることを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191068",
+      "publishedAt": "2026-10-06T04:54:36.000Z"
+    },
+    {
+      "id": "44a57d7cc3e60699",
+      "title": "デンマークで住民登録簿に不正アクセス 880万人分の個人番号など流出 政府「極めて深刻」",
+      "summary": "デンマーク政府は2026年10月5日（現地時間）、同国の中央個人登録簿「CPR」に第三者が不正アクセスし、約880万人分の氏名や住所、個人番号が取得されたと発表した。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/news/article/2610/06/2000002032/",
+      "publishedAt": "2026-10-06T03:41:53.000Z"
+    },
+    {
+      "id": "e7e304ea4a0a6cac",
+      "title": "Googleの正規ドメインなのに偽Webサイト パスワード管理ツールまで反応したフィッシングの正体",
+      "summary": "「Googleのドメインだから大丈夫」「CAPTCHAがあるから本物」――そんな判断が通用しないフィッシング事例が報告された。",
+      "insight": "経営示唆: 初動・広報・事業継続の役割分担を確認し、机上訓練の実施時期を見直してください。",
+      "category": "インシデント対応・被害拡大",
+      "source": "ITmedia セキュリティ",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/06/news029.html",
+      "publishedAt": "2026-10-06T02:00:00.000Z"
+    },
+    {
+      "id": "deb3b227e1e4d4f5",
+      "title": "JetBrains、6製品で脆弱性57件を修正 - 重要度「クリティカル」も",
+      "summary": "JetBrainsは、開発環境やプロジェクト管理製品など複数の製品において脆弱性を修正したことを明らかにした。",
+      "insight": "経営示唆: 初動・広報・事業継続の役割分担を確認し、机上訓練の実施時期を見直してください。",
+      "category": "インシデント対応・被害拡大",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191058",
+      "publishedAt": "2026-10-06T01:33:04.000Z"
+    },
+    {
+      "id": "da2288b6fcf7e65a",
+      "title": "不正アクセスなぜ急増 原因はAIか、それとも…… 専門家の見解は",
+      "summary": "9月末以降、不正アクセスやそれに伴う情報漏えいの発表が日本企業から相次いでいる。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/news/article/2610/06/2000002013/",
+      "publishedAt": "2026-10-06T01:00:00.000Z"
+    },
+    {
+      "id": "fbb001735156b263",
+      "title": "Okta Blog 第20回 AIアカウント乗っ取りと偽登録の仕組み ～ Oktaが明かすアンダーグラウンドAI経済",
+      "summary": "Okta Blog 第20回 AIアカウント乗っ取りと偽登録の仕組み ～ Oktaが明かすアンダーグラウンドAI経済",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56396.html",
+      "publishedAt": "2026-10-05T23:15:03.000Z"
+    },
+    {
+      "id": "dfb8cb5288e7799d",
+      "title": "「なぜ、Mythos を使えないのか？」エーアイセキュリティラボが AI 時代の脆弱性診断をテーマに登壇 ～ 情報セキュリティEXPO 秋",
+      "summary": "「なぜ、Mythos を使えないのか？",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56395.html",
+      "publishedAt": "2026-10-05T23:10:03.000Z"
+    },
+    {
+      "id": "7b075c0ca3f4ede2",
+      "title": "「ベネワン・プラットフォーム」のアンケート機能で他企業・団体の個人情報がダウンロード可能に、不具合を認知するも解消作業が適切に実施されず",
+      "summary": "「ベネワン・プラットフォーム」のアンケート機能で他企業・団体の個人情報がダウンロード可能に、不具合を認知するも解消作業が適切に実施されず",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56394.html",
+      "publishedAt": "2026-10-05T23:05:10.000Z"
+    },
+    {
+      "id": "597372d1ab4a6d6b",
+      "title": "「信濃毎日新聞デジタル」に不正アクセス、一時的に一部の履歴データが消去",
+      "summary": "「信濃毎日新聞デジタル」に不正アクセス、一時的に一部の履歴データが消去",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56393.html",
+      "publishedAt": "2026-10-05T23:05:09.000Z"
+    },
+    {
+      "id": "7a3038f635469cb8",
+      "title": "「PhotoGoods」に不正アクセス、カード情報が漏えいした可能性",
+      "summary": "「PhotoGoods」に不正アクセス、カード情報が漏えいした可能性",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56392.html",
+      "publishedAt": "2026-10-05T23:05:05.000Z"
+    },
+    {
+      "id": "88720a33c3986a33",
+      "title": "ムラウチドットコムに不正アクセス、7,716,811件の個人情報が漏えい",
+      "summary": "ムラウチドットコムに不正アクセス、7,716,811件の個人情報が漏えい",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56391.html",
+      "publishedAt": "2026-10-05T23:05:02.000Z"
+    },
+    {
+      "id": "99113e9f62e41f29",
+      "title": "なぜ退会者の免許証が7年残る？ タイムズカー漏えいが問う“データの持ち方”",
+      "summary": "カーシェアリングサービス「タイムズカー」への不正アクセスで、退会者を含む約160万件の本人確認書類画像が漏えいしました。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2610/06/news018.html",
+      "publishedAt": "2026-10-05T22:00:00.000Z"
+    },
+    {
+      "id": "bf9055e39ea2e2b2",
+      "title": "複数サイトに不正アクセス、プラグイン脆弱性が標的に - ベネッセグループ会社",
+      "summary": "ベネッセコーポレーションのグループ会社で総合教育サービスを提供するアップは、運営する2サイトが不正アクセスを受け、採用応募者などの個人情報が流出した可能性があることを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/190961",
+      "publishedAt": "2026-10-05T14:46:03.000Z"
+    },
+    {
+      "id": "a860350673325840",
+      "title": "「焼肉きんぐ」アプリの会員情報が流出 - 原因など詳細を調査",
+      "summary": "外食チェーン「焼肉きんぐ」の公式アプリを利用する一部会員の個人情報が外部に流出したことがわかった。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191040",
+      "publishedAt": "2026-10-05T13:45:16.000Z"
+    },
+    {
+      "id": "2cbb6c8244911a5d",
+      "title": "Cloudflare ContainersがAIエージェント向けに刷新。起動が6倍速、ファイルシステムのスナップショット機能など",
+      "summary": "Cloudflareは、同社のエッジロケーションでコンテナ型仮想マシンを実行可能にする「Cloudflare Containers」をAIエージェント向けに刷新したことを発表しました。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/cloudflare_containersai6.html",
+      "publishedAt": "2026-10-05T13:32:08.000Z"
+    },
+    {
+      "id": "299d2691388f8705",
+      "title": "「焼肉きんぐ」個人情報約1079万件が漏えい 公式アプリのシステムに不正アクセス ほぼ全会員分に相当",
+      "summary": "「焼肉きんぐ」を運営する物語コーポレーションは10月5日、公式アプリの会員管理システムが第三者による不正アクセスを受け、会員情報1078万8963件が漏えいしたと発表した。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/news/article/2610/05/2000002011/",
+      "publishedAt": "2026-10-05T09:39:42.000Z"
+    },
+    {
+      "id": "e254416694bc2bc4",
+      "title": "韓国の銀行6行にサイバー攻撃 計2万5000人超の個人情報流出──AIエージェントを使った可能性も 現地報道",
+      "summary": "韓国の銀行で9月末からサイバー攻撃が相次ぎ、新韓銀行など4行で計2万5000人超の個人情報が流出したと現地紙が報じた。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/news/article/2610/05/2000002009/",
+      "publishedAt": "2026-10-05T09:21:19.000Z"
+    },
+    {
+      "id": "3e9d285ef3245fde",
+      "title": "ブロガー情報管理システムに不正アクセス、個人情報が流出 - 集英社",
+      "summary": "集英社は、同社のファッション誌で活動しているブロガーの情報管理や連絡に用いるシステム「HAPPY PLUS COMMUNITY（ハピコミュ）」が外部の第三者による不正アクセスを受け、ブロガーの個人情報が外部に流出したことを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/190800",
+      "publishedAt": "2026-10-05T08:34:51.000Z"
+    },
+    {
+      "id": "82df7f645810221d",
+      "title": "原子力研究機関から身分証200件が漏えい マイナンバー含む6人分も",
+      "summary": "日本原子力研究開発機構の研究支援サイトで2419件のファイルが不正アクセスに遭い、原子力研究施設の利用者が提出した身分証200件や6人分のマイナンバーなどが漏えいしたことが発覚した。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/05/news018.html",
+      "publishedAt": "2026-10-05T02:00:00.000Z"
+    },
+    {
+      "id": "85f14fce433c745b",
+      "title": "「GitLab AI Gateway」にサンドボックス回避の脆弱性 - コマンド実行のおそれ",
+      "summary": "GitLabは、「GitLab AI Gateway」に深刻な脆弱性が明らかになったとして、修正版をリリースした。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191010",
+      "publishedAt": "2026-10-05T00:16:13.000Z"
+    },
+    {
+      "id": "3588f003fc52638a",
+      "title": "世界中のソフトウェア開発者の実態を調べた「State of Devs 2026」公開。何歳？ 年収は？ モニタは何枚？ AIにどのくらいコードを書かせている？ 趣味は？ など集計結果",
+      "summary": "IT関連の各種調査を行っているプロジェクトDevographicsは、世界中のソフトウェア開発者の実態などをアンケートで調査した「State of Devs 2026」の結果を公開しました。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/state_of_devs_2026_ai.html",
+      "publishedAt": "2026-10-05T00:09:25.000Z"
+    },
+    {
+      "id": "0cd4df4af114415a",
+      "title": "あいの風とやま鉄道 観光列車の座席管理システムに不正アクセス",
+      "summary": "あいの風とやま鉄道 観光列車の座席管理システムに不正アクセス",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56383.html",
+      "publishedAt": "2026-10-04T23:05:13.000Z"
+    },
+    {
+      "id": "6032ed36c1fb358a",
+      "title": "LEAN BODY が利用する分析ツール「Metabase」の脆弱性を悪用した不正アクセス",
+      "summary": "LEAN BODY が利用する分析ツール「Metabase」の脆弱性を悪用した不正アクセス",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56382.html",
+      "publishedAt": "2026-10-04T23:05:10.000Z"
+    },
+    {
+      "id": "371311b59e800e2e",
+      "title": "東産業 公式サイトにwp2shell を悪用した不正アクセス",
+      "summary": "東産業 公式サイトにwp2shell を悪用した不正アクセス",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56381.html",
+      "publishedAt": "2026-10-04T23:05:07.000Z"
+    },
+    {
+      "id": "75cc431264b8ae62",
+      "title": "日本大学の計 5 名の教員アカウントに不正アクセス、スパムメール送信の踏み台に",
+      "summary": "日本大学の計 5 名の教員アカウントに不正アクセス、スパムメール送信の踏み台に",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56380.html",
+      "publishedAt": "2026-10-04T23:05:05.000Z"
+    },
+    {
+      "id": "0163872247100a08",
+      "title": "ECサイト「ビールの縁側」に不正アクセス、9 名のカード情報が漏えいした可能性",
+      "summary": "ECサイト「ビールの縁側」に不正アクセス、9 名のカード情報が漏えいした可能性",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56379.html",
+      "publishedAt": "2026-10-04T23:05:02.000Z"
+    },
+    {
+      "id": "14e9b7219344e348",
+      "title": "Supabase、1サーバあたり数百万ものSQLiteをホストする「Turso」買収を発表。AIエージェントで加速するDB需要に対応",
+      "summary": "PostgreSQLをベースにしたデータベースサービス「Supabase」などを提供しているSupabaseは、SQLiteをベースとしたデータベースサービスを提供する「Turso」を買収したことを発表しました。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/supabase1sqlitetursoaidb.html",
+      "publishedAt": "2026-10-04T13:59:29.000Z"
+    },
+    {
+      "id": "c03b205365711fc1",
+      "title": "本人確認書類の画像流出、対象アカウントは約160万件 - タイムズカー",
+      "summary": "パーク24グループのタイムズモビリティが運営するカーシェアリングサービス「タイムズカー」が外部から侵害され、会員の個人情報が流出した問題で、本人確認書類の流出状況を明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/190989",
+      "publishedAt": "2026-10-02T14:22:15.000Z"
+    },
+    {
+      "id": "c20f1f2915ddf0d7",
+      "title": "荷物問合サービスが侵害、個人情報流出の可能性 - 佐川急便",
+      "summary": "佐川急便は、荷物問い合わせサービスがサイバー攻撃を受け、顧客の個人情報が流出した可能性があることを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/190952",
+      "publishedAt": "2026-10-02T13:46:44.000Z"
+    },
+    {
+      "id": "057e2859df9c715a",
+      "title": "日本エネルギー経済研究所、不正アクセスの続報 パスポート情報13件の漏えい確認",
+      "summary": "日本エネルギー経済研究所は10月2日、9月に公表した不正アクセス被害について、詳細調査の結果を発表した。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/news/article/2610/02/2000001976/",
+      "publishedAt": "2026-10-02T08:51:33.000Z"
+    },
+    {
+      "id": "a2c61f2acc8f2ce5",
+      "title": "研究用原子炉利用者の身分証明書などが外部流出 - 原子力機構",
+      "summary": "日本原子力研究開発機構は、研究支援サイトがサイバー攻撃を受けたことを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/190957",
+      "publishedAt": "2026-10-02T08:18:00.000Z"
+    },
+    {
+      "id": "fa47427153afc4a0",
+      "title": "第一生命に不正アクセス 従業員情報12万人分漏えいか 退職者も対象",
+      "summary": "第一ライフグループと第一生命保険が、2社の使う人事システムが不正アクセスを受け、従業員情報約12万人分が漏えいした可能性があると発表した。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/news/article/2610/02/2000001971/",
+      "publishedAt": "2026-10-02T07:49:41.000Z"
+    },
+    {
+      "id": "5e27e207a2931560",
+      "title": "日本トレクスの情報システムに不正アクセス、一部業務が停止",
+      "summary": "日本トレクスの情報システムに不正アクセス、一部業務が停止",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/02/56377.html",
+      "publishedAt": "2026-10-01T23:05:23.000Z"
+    },
+    {
+      "id": "ec1f0f82a7563743",
+      "title": "Weekly Report: ServiceNow AI Platformに複数の脆弱性",
+      "summary": "ServiceNow AI Platformに複数の脆弱性",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "JPCERT/CC",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr260930.html#1",
+      "publishedAt": "2026-09-30T00:07:00.000Z"
+    },
+    {
+      "id": "caf6402c7bc7aa5c",
+      "title": "シャドーAIへの機密流出をブロック Microsoftがセキュリティ製品群をアップデート",
+      "summary": "Microsoftがセキュリティ製品群のアップデートを発表した。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2609/29/news035.html",
+      "publishedAt": "2026-09-29T22:00:00.000Z"
+    },
+    {
+      "id": "8967f03ca1ab0e44",
+      "title": "Google Cloud、AIエージェントからの大量アクセスをPostgreSQLのプライマリDBから切り離せる「PostgreSQL for agents in AlloyDB」発表",
+      "summary": "Google Cloudは、本番環境で動作しているPostgreSQLの処理に影響を与えないよう、AIエージェントからの読み取りワークロード用にサンドボックス化されたPostgreSQLのデータベースインスタンスを数秒でプロビジョニングす…",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/google_cloudaipostgresqldbpostgresql_for_agents_in_alloydb.html",
+      "publishedAt": "2026-09-29T14:49:43.000Z"
+    },
+    {
+      "id": "f29093cfa6f3bde4",
+      "title": "コーディングエージェントにGoogle Cloudの専門知識とツールを組み込む「Google Cloud Developer Plugin for AI Coding Agents」発表",
+      "summary": "Google Cloudは、Claude CodeなどのコーディングエージェントにGoogle Cloudの専門知識とツールなどを組み込める「Google Cloud Developer Plugin for AI Coding Agen…",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/google_cloudgoogle_cloud_developer_plugin_for_ai_coding_agents.html",
+      "publishedAt": "2026-09-29T14:46:14.000Z"
+    },
+    {
+      "id": "06208175f60b13cd",
+      "title": "AWS、AIエージェントを自作できるツール「Strandsハーネス」をオープンソースで公開。特定のLLMに依存せず入れ替え可能、任意のコンテナ環境にデプロイ",
+      "summary": "Amazon Web Services（AWS）は、GPTやClaude、Gemini、Ollamaなど主要なLLMやLLMランタイムを基にした高性能なAIエージェントを簡単に自作できるツール「Strandsハーネス」をオープンソースで公…",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/awsaistrandsllm.html",
+      "publishedAt": "2026-09-28T14:28:54.000Z"
+    },
+    {
+      "id": "b3a3e767bb50c496",
+      "title": "画像を処理するだけで侵入される？ OpenAIにも侵入できた攻撃手法を解説",
+      "summary": "画像をアップロードするだけの機能が、攻撃者にとって格好の入り口になることがある。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ITmedia セキュリティ",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/28/news034.html",
+      "publishedAt": "2026-09-27T23:00:00.000Z"
+    },
+    {
+      "id": "6315d4c34322994f",
+      "title": "ChatGPT Plusの支払い情報更新メール、偽物かも？ AIブランドを餌にした攻撃が拡大",
+      "summary": "ChatGPTやClaude、DeepSeekなどAIの名前をかたる攻撃が広がっている。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2609/28/news035.html",
+      "publishedAt": "2026-09-27T22:00:00.000Z"
+    },
+    {
+      "id": "2760313e569612ca",
+      "title": "「Docker Cloud Sandboxes」発表、AIエージェント向けサンドボックスをローカルとクラウド間で自由に移動可能に",
+      "summary": "Docker社はAIエージェント向けのサンドボックス環境をクラウド上で提供する「Docker Cloud Sandboxes」を発表しました。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/docker_cloud_snadboxesai.html",
+      "publishedAt": "2026-09-27T15:58:48.000Z"
+    },
+    {
+      "id": "010a9a3e6b33b14d",
+      "title": "マイクロソフト、企業内アプリの実行基盤「Copilot Managed Runtime」プレビュー公開。Microsoft 365と同じテナント内でコード実行、管理者による集中管理も",
+      "summary": "マイクロソフトは、AIコーディングエージェントのMicrosoft Copilotなどで開発した社内アプリケーションを実行するためのセキュアな基盤「Copilot Managed Runtime」をパブリックプレビューとして公開しました。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/copilot_managed_runtimemicrosoft_365.html",
+      "publishedAt": "2026-09-27T14:03:20.000Z"
+    },
+    {
+      "id": "d0769d03e75340a3",
+      "title": "AIの「見つけた」をうのみにしない Google、誤検知“ほぼゼロ”で脆弱性500件超を発見した検証の仕組み",
+      "summary": "AIに脆弱性を探させると、未検証の仮説や誤検知が大量に届く。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2609/27/news006.html",
+      "publishedAt": "2026-09-26T22:00:00.000Z"
+    },
+    {
+      "id": "6187f2ba7e88add2",
+      "title": "【マネしないで】AIが暴走してやらかす“3つの主要パターン”を解説",
+      "summary": "AIエージェントの外部企業への侵入事案が話題だ。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ITmedia セキュリティ",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/25/news059.html",
+      "publishedAt": "2026-09-25T06:00:00.000Z"
+    },
+    {
+      "id": "b4d90065b9f0dadf",
+      "title": "「LLMの出力コードを理解できない初心者ばかり」 PS5非公式ハックの主導者が離脱、AI時代のOSS開発に苦言",
+      "summary": "「PlayStation 5」でLinuxを動かすことを目指してきた非公式のハックプロジェクト「PS5 Linux」で、中心開発者が開発から離れることを明らかにした。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ITmedia セキュリティ",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/25/news048.html",
+      "publishedAt": "2026-09-25T04:00:00.000Z"
+    },
+    {
+      "id": "e215e5fe5ea928c6",
+      "title": "AIにコードを書かせ放題で大丈夫？ 開発現場に迫る「AIコスト」の見えない問題",
+      "summary": "AIにコードを書かせれば、開発は速くなる。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ITmedia セキュリティ",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/25/news042.html",
+      "publishedAt": "2026-09-24T23:00:00.000Z"
+    },
+    {
+      "id": "ef5a24c1c26cd720",
+      "title": "「ヒューマン・イン・ザ・ループ万能説」崩壊 AIエージェント時代に企業が迫られる“防御の再設計”",
+      "summary": "AIエージェントが企業インフラを操作し、攻撃側もAIで侵入作業を分単位に圧縮する時代。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ITmedia セキュリティ",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/23/news006.html",
+      "publishedAt": "2026-09-23T08:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "secupulse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SecuPulse — AI時代の情報セキュリティ・個人情報漏洩ニュースサイト",
+  "type": "module",
+  "scripts": {
+    "fetch": "node --use-system-ca scripts/fetch-news.mjs",
+    "build": "node --use-system-ca scripts/fetch-news.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
