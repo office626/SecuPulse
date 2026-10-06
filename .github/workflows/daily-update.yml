@@ -2,8 +2,8 @@ name: Daily news update
 
 on:
   schedule:
-    # 毎日 00:15 UTC ≒ 日本時間 09:15
-    - cron: "15 0 * * *"
+    # 毎日 12:00 UTC ≒ 日本時間 21:00
+    - cron: "0 12 * * *"
   workflow_dispatch:
 
 permissions:

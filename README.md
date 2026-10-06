@@ -33,7 +33,7 @@ npx --yes serve .
 
 ## 自動更新
 
-`.github/workflows/daily-update.yml` が毎日1回（JST 朝頃）実行され、`data/news.json` を更新して main に push します。  
+`.github/workflows/daily-update.yml` が毎日1回（日本時間 21:00）実行され、`data/news.json` を更新して main に push します。  
 手動実行は Actions タブの **Daily news update** から可能です。
 
 ## 注意
