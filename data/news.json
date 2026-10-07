@@ -1,7 +1,7 @@
 {
   "site": "SecuPulse",
   "title": "AI時代の情報セキュリティ・個人情報漏洩ニュースサイト",
-  "updatedAt": "2026-10-06T23:27:23.073Z",
+  "updatedAt": "2026-10-07T18:36:55.995Z",
   "timezone": "Asia/Tokyo",
   "categories": [
     "AIセキュリティ",
@@ -12,13 +12,13 @@
   ],
   "stats": {
     "total": 48,
-    "aiSecurity": 23,
+    "aiSecurity": 21,
     "personalData": 24,
     "byCategory": {
-      "AIセキュリティ": 23,
+      "AIセキュリティ": 21,
       "個人情報漏洩": 24,
       "規制・ガバナンス": 0,
-      "インシデント対応・被害拡大": 1,
+      "インシデント対応・被害拡大": 3,
       "サプライチェーン／委託先": 0
     }
   },
@@ -57,6 +57,156 @@
   "errors": [],
   "items": [
     {
+      "id": "2c1f790a35d9548e",
+      "title": "GMOアンケートサイトに不正アクセス - 個人情報が流出、ポイント不正交換も",
+      "summary": "GMOリサーチ＆AIは、同社が運営するアンケートサイト「infoQ」において、会員の個人情報が外部に流出したことを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191138",
+      "publishedAt": "2026-10-07T14:54:24.000Z"
+    },
+    {
+      "id": "dd5b7221b05b0b3f",
+      "title": "千葉銀の子会社サイトで侵害 - 個人情報流出の可能性",
+      "summary": "千葉銀行は、子会社のウェブサイトが侵害され、同行顧客の個人情報が流出した可能性があることを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/190509",
+      "publishedAt": "2026-10-07T13:58:04.000Z"
+    },
+    {
+      "id": "cf5afe7d15bdb70e",
+      "title": "社会医療法人の報告書、個人情報をマスク処理せず掲載 - 三重県",
+      "summary": "三重県は、社会医療法人1団体の事業報告書を個人情報の部分に対してマスキングせず同県サイトに掲載したことを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/190920",
+      "publishedAt": "2026-10-07T13:36:05.000Z"
+    },
+    {
+      "id": "88540aa725e83a15",
+      "title": "「オズモール」に不正アクセス - 会員の個人情報流出の可能性",
+      "summary": "女性向け情報サイト「オズモール」が不正アクセスを受け、会員の個人情報が流出した可能性があることがわかった。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/190796",
+      "publishedAt": "2026-10-07T12:45:56.000Z"
+    },
+    {
+      "id": "2d4b3273745b9948",
+      "title": "「Movable Type」に2件の脆弱性 - 修正版が公開",
+      "summary": "シックス・アパートが提供するコンテンツマネジメントシステム「Movable Type」に複数の脆弱性が明らかとなった。",
+      "insight": "経営示唆: 初動・広報・事業継続の役割分担を確認し、机上訓練の実施時期を見直してください。",
+      "category": "インシデント対応・被害拡大",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191159",
+      "publishedAt": "2026-10-07T11:45:00.000Z"
+    },
+    {
+      "id": "087a69864eee371c",
+      "title": "損保ジャパン、約6万件漏えいか 大和証券・シチズンと同じ委託先への不正アクセスで",
+      "summary": "損害保険ジャパンは10月7日、事業者向けドライブレコーダー「SMILING ROAD」の問い合わせ対応に使う外部委託先のシステムが不正アクセスを受け、顧客情報が漏えいした可能性があると発表した。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/news/article/2610/07/2000002099/",
+      "publishedAt": "2026-10-07T08:22:36.000Z"
+    },
+    {
+      "id": "d749d6e97e7802b1",
+      "title": "持っていた個人情報が「全件」流出対象 infoQでポイント286万円分も不正交換",
+      "summary": "アンケートサイト「infoQ」で不正アクセスが発生した。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/07/news035.html",
+      "publishedAt": "2026-10-07T08:00:00.000Z"
+    },
+    {
+      "id": "afadd6d39d6be090",
+      "title": "関西国際大に不正アクセス、学生の記録などが外部流出か 授業や手続きにも支障",
+      "summary": "関西国際大学は10月6日、eポートフォリオシステムへの不正アクセスで、過去に在籍した学生の在学中の振り返りなどの文字情報が外部に流出したと発表した。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/news/article/2610/07/2000002088/",
+      "publishedAt": "2026-10-07T06:30:15.000Z"
+    },
+    {
+      "id": "ee71154d3d9a0415",
+      "title": "AIの暴走を招く“やっちゃいけない3つのこと” 実際の画面を見ながら解説",
+      "summary": "今後顕在化する可能性があるAIエージェントの暴走リスク。",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ITmedia セキュリティ",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/07/news018.html",
+      "publishedAt": "2026-10-07T06:00:00.000Z"
+    },
+    {
+      "id": "a31b3d2cd79311d0",
+      "title": "「焼肉きんぐ」ほぼ全会員1078万件の情報が漏えい パスワードは無事でも残るリスク",
+      "summary": "「焼肉きんぐ」の公式アプリで、登録会員のほぼ全件に当たる1078万件超の個人情報が漏えいした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/07/news033.html",
+      "publishedAt": "2026-10-07T06:00:00.000Z"
+    },
+    {
+      "id": "14154e95c1929a87",
+      "title": "アプリや通販サイト会員の個人情報が流出 - MrMax",
+      "summary": "ディスカウントストア「MrMax」を運営するミスターマックスは、アプリ会員とオンラインストア会員の個人情報が流出した可能性があることを明らかにした。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191135",
+      "publishedAt": "2026-10-07T05:51:42.000Z"
+    },
+    {
+      "id": "4dde16159a73d812",
+      "title": "1億件超えの「楽天会員」情報が闇フォーラムで販売？ 楽天「漏えいは確認されていない」",
+      "summary": "楽天の会員情報約1億100万件をうたうデータがサイバー犯罪フォーラム上で売りに出されたとの報道があった。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/news/article/2610/07/2000002083/",
+      "publishedAt": "2026-10-07T03:42:40.000Z"
+    },
+    {
+      "id": "443328c272b1fa50",
+      "title": "「Veeam Backup &#038; Replication 12」に深刻な脆弱性 - 修正版が公開",
+      "summary": "Veeam Softwareのバックアップ製品「Veeam Backup &#038; Replication」の一部ブランチに深刻な脆弱性が明らかとなった。",
+      "insight": "経営示唆: 初動・広報・事業継続の役割分担を確認し、机上訓練の実施時期を見直してください。",
+      "category": "インシデント対応・被害拡大",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191141",
+      "publishedAt": "2026-10-07T03:30:01.000Z"
+    },
+    {
+      "id": "d05fbd29bf1de720",
+      "title": "バイブコーディングで作った公開中のWebアプリ、9割に脆弱性 MSの研究者など調査",
+      "summary": "米Microsoftやシンガポール国立大学などに所属する研究者らが発表した論文「Understanding the (In)Security of Vibe-Coded Applications」は、AIに自動生成させたアプリケーションに…",
+      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
+      "category": "AIセキュリティ",
+      "source": "ITmedia セキュリティ",
+      "url": "https://www.itmedia.co.jp/news/article/2610/07/2000002055/",
+      "publishedAt": "2026-10-07T03:12:12.000Z"
+    },
+    {
+      "id": "949f29fcbd4eeab6",
+      "title": "リモートアクセス製品「SonicWall SMA1000シリーズ」に深刻なSSRF脆弱性",
+      "summary": "SonicWallのリモートアクセス製品「SMA1000シリーズ」に深刻な脆弱性が明らかとなった。",
+      "insight": "経営示唆: 初動・広報・事業継続の役割分担を確認し、机上訓練の実施時期を見直してください。",
+      "category": "インシデント対応・被害拡大",
+      "source": "Security NEXT",
+      "url": "https://www.security-next.com/191125",
+      "publishedAt": "2026-10-07T01:12:50.000Z"
+    },
+    {
       "id": "2e59468d6a2a640e",
       "title": "KKR京都くに荘のメールサーバに不正アクセス",
       "summary": "KKR京都くに荘のメールサーバに不正アクセス",
@@ -65,16 +215,6 @@
       "source": "ScanNetSecurity",
       "url": "https://scan.netsecurity.ne.jp/article/2026/10/07/56406.html",
       "publishedAt": "2026-10-06T23:05:22.000Z"
-    },
-    {
-      "id": "23a9a7ad8a51a4bc",
-      "title": "九州電子 台湾子会社にランサムウェア攻撃、事業運営に必要なシステム環境の復旧を完了",
-      "summary": "九州電子 台湾子会社にランサムウェア攻撃、事業運営に必要なシステム環境の復旧を完了",
-      "insight": "経営示唆: 初動・広報・事業継続の役割分担を確認し、机上訓練の実施時期を見直してください。",
-      "category": "インシデント対応・被害拡大",
-      "source": "ScanNetSecurity",
-      "url": "https://scan.netsecurity.ne.jp/article/2026/10/07/56405.html",
-      "publishedAt": "2026-10-06T23:05:18.000Z"
     },
     {
       "id": "25a6152b83bb4225",
@@ -105,6 +245,16 @@
       "source": "ScanNetSecurity",
       "url": "https://scan.netsecurity.ne.jp/article/2026/10/07/56400.html",
       "publishedAt": "2026-10-06T23:05:02.000Z"
+    },
+    {
+      "id": "2e19fd3680debac4",
+      "title": "「自社システムは無事」でも顧客情報は漏れる 大和証券約11万人の情報に不正アクセス",
+      "summary": "大和証券の顧客約11万人に関する情報が、同社ではなく外部の委託先サーバへの不正アクセスによって漏えいした可能性がある。",
+      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
+      "category": "個人情報漏洩",
+      "source": "ITmedia セキュリティ",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/07/news030.html",
+      "publishedAt": "2026-10-06T23:00:00.000Z"
     },
     {
       "id": "49257c782823d2ef",
@@ -237,76 +387,6 @@
       "publishedAt": "2026-10-05T23:10:03.000Z"
     },
     {
-      "id": "7b075c0ca3f4ede2",
-      "title": "「ベネワン・プラットフォーム」のアンケート機能で他企業・団体の個人情報がダウンロード可能に、不具合を認知するも解消作業が適切に実施されず",
-      "summary": "「ベネワン・プラットフォーム」のアンケート機能で他企業・団体の個人情報がダウンロード可能に、不具合を認知するも解消作業が適切に実施されず",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ScanNetSecurity",
-      "url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56394.html",
-      "publishedAt": "2026-10-05T23:05:10.000Z"
-    },
-    {
-      "id": "597372d1ab4a6d6b",
-      "title": "「信濃毎日新聞デジタル」に不正アクセス、一時的に一部の履歴データが消去",
-      "summary": "「信濃毎日新聞デジタル」に不正アクセス、一時的に一部の履歴データが消去",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ScanNetSecurity",
-      "url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56393.html",
-      "publishedAt": "2026-10-05T23:05:09.000Z"
-    },
-    {
-      "id": "7a3038f635469cb8",
-      "title": "「PhotoGoods」に不正アクセス、カード情報が漏えいした可能性",
-      "summary": "「PhotoGoods」に不正アクセス、カード情報が漏えいした可能性",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ScanNetSecurity",
-      "url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56392.html",
-      "publishedAt": "2026-10-05T23:05:05.000Z"
-    },
-    {
-      "id": "88720a33c3986a33",
-      "title": "ムラウチドットコムに不正アクセス、7,716,811件の個人情報が漏えい",
-      "summary": "ムラウチドットコムに不正アクセス、7,716,811件の個人情報が漏えい",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ScanNetSecurity",
-      "url": "https://scan.netsecurity.ne.jp/article/2026/10/06/56391.html",
-      "publishedAt": "2026-10-05T23:05:02.000Z"
-    },
-    {
-      "id": "99113e9f62e41f29",
-      "title": "なぜ退会者の免許証が7年残る？ タイムズカー漏えいが問う“データの持ち方”",
-      "summary": "カーシェアリングサービス「タイムズカー」への不正アクセスで、退会者を含む約160万件の本人確認書類画像が漏えいしました。",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ITmedia セキュリティ",
-      "url": "https://www.itmedia.co.jp/enterprise/articles/2610/06/news018.html",
-      "publishedAt": "2026-10-05T22:00:00.000Z"
-    },
-    {
-      "id": "bf9055e39ea2e2b2",
-      "title": "複数サイトに不正アクセス、プラグイン脆弱性が標的に - ベネッセグループ会社",
-      "summary": "ベネッセコーポレーションのグループ会社で総合教育サービスを提供するアップは、運営する2サイトが不正アクセスを受け、採用応募者などの個人情報が流出した可能性があることを明らかにした。",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "Security NEXT",
-      "url": "https://www.security-next.com/190961",
-      "publishedAt": "2026-10-05T14:46:03.000Z"
-    },
-    {
-      "id": "a860350673325840",
-      "title": "「焼肉きんぐ」アプリの会員情報が流出 - 原因など詳細を調査",
-      "summary": "外食チェーン「焼肉きんぐ」の公式アプリを利用する一部会員の個人情報が外部に流出したことがわかった。",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "Security NEXT",
-      "url": "https://www.security-next.com/191040",
-      "publishedAt": "2026-10-05T13:45:16.000Z"
-    },
-    {
       "id": "2cbb6c8244911a5d",
       "title": "Cloudflare ContainersがAIエージェント向けに刷新。起動が6倍速、ファイルシステムのスナップショット機能など",
       "summary": "Cloudflareは、同社のエッジロケーションでコンテナ型仮想マシンを実行可能にする「Cloudflare Containers」をAIエージェント向けに刷新したことを発表しました。",
@@ -315,16 +395,6 @@
       "source": "Publickey",
       "url": "https://www.publickey1.jp/blog/26/cloudflare_containersai6.html",
       "publishedAt": "2026-10-05T13:32:08.000Z"
-    },
-    {
-      "id": "299d2691388f8705",
-      "title": "「焼肉きんぐ」個人情報約1079万件が漏えい 公式アプリのシステムに不正アクセス ほぼ全会員分に相当",
-      "summary": "「焼肉きんぐ」を運営する物語コーポレーションは10月5日、公式アプリの会員管理システムが第三者による不正アクセスを受け、会員情報1078万8963件が漏えいしたと発表した。",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ITmedia セキュリティ",
-      "url": "https://www.itmedia.co.jp/news/article/2610/05/2000002011/",
-      "publishedAt": "2026-10-05T09:39:42.000Z"
     },
     {
       "id": "e254416694bc2bc4",
@@ -337,36 +407,6 @@
       "publishedAt": "2026-10-05T09:21:19.000Z"
     },
     {
-      "id": "3e9d285ef3245fde",
-      "title": "ブロガー情報管理システムに不正アクセス、個人情報が流出 - 集英社",
-      "summary": "集英社は、同社のファッション誌で活動しているブロガーの情報管理や連絡に用いるシステム「HAPPY PLUS COMMUNITY（ハピコミュ）」が外部の第三者による不正アクセスを受け、ブロガーの個人情報が外部に流出したことを明らかにした。",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "Security NEXT",
-      "url": "https://www.security-next.com/190800",
-      "publishedAt": "2026-10-05T08:34:51.000Z"
-    },
-    {
-      "id": "82df7f645810221d",
-      "title": "原子力研究機関から身分証200件が漏えい マイナンバー含む6人分も",
-      "summary": "日本原子力研究開発機構の研究支援サイトで2419件のファイルが不正アクセスに遭い、原子力研究施設の利用者が提出した身分証200件や6人分のマイナンバーなどが漏えいしたことが発覚した。",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ITmedia セキュリティ",
-      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/05/news018.html",
-      "publishedAt": "2026-10-05T02:00:00.000Z"
-    },
-    {
-      "id": "85f14fce433c745b",
-      "title": "「GitLab AI Gateway」にサンドボックス回避の脆弱性 - コマンド実行のおそれ",
-      "summary": "GitLabは、「GitLab AI Gateway」に深刻な脆弱性が明らかになったとして、修正版をリリースした。",
-      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
-      "category": "AIセキュリティ",
-      "source": "Security NEXT",
-      "url": "https://www.security-next.com/191010",
-      "publishedAt": "2026-10-05T00:16:13.000Z"
-    },
-    {
       "id": "3588f003fc52638a",
       "title": "世界中のソフトウェア開発者の実態を調べた「State of Devs 2026」公開。何歳？ 年収は？ モニタは何枚？ AIにどのくらいコードを書かせている？ 趣味は？ など集計結果",
       "summary": "IT関連の各種調査を行っているプロジェクトDevographicsは、世界中のソフトウェア開発者の実態などをアンケートで調査した「State of Devs 2026」の結果を公開しました。",
@@ -377,16 +417,6 @@
       "publishedAt": "2026-10-05T00:09:25.000Z"
     },
     {
-      "id": "0cd4df4af114415a",
-      "title": "あいの風とやま鉄道 観光列車の座席管理システムに不正アクセス",
-      "summary": "あいの風とやま鉄道 観光列車の座席管理システムに不正アクセス",
-      "insight": "経営示唆: 影響顧客への説明責任と、報告義務・再発防止の取締役会報告体制を点検してください。",
-      "category": "個人情報漏洩",
-      "source": "ScanNetSecurity",
-      "url": "https://scan.netsecurity.ne.jp/article/2026/10/05/56383.html",
-      "publishedAt": "2026-10-04T23:05:13.000Z"
-    },
-    {
       "id": "14e9b7219344e348",
       "title": "Supabase、1サーバあたり数百万ものSQLiteをホストする「Turso」買収を発表。AIエージェントで加速するDB需要に対応",
       "summary": "PostgreSQLをベースにしたデータベースサービス「Supabase」などを提供しているSupabaseは、SQLiteをベースとしたデータベースサービスを提供する「Turso」を買収したことを発表しました。",
@@ -395,16 +425,6 @@
       "source": "Publickey",
       "url": "https://www.publickey1.jp/blog/26/supabase1sqlitetursoaidb.html",
       "publishedAt": "2026-10-04T13:59:29.000Z"
-    },
-    {
-      "id": "ec1f0f82a7563743",
-      "title": "Weekly Report: ServiceNow AI Platformに複数の脆弱性",
-      "summary": "ServiceNow AI Platformに複数の脆弱性",
-      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
-      "category": "AIセキュリティ",
-      "source": "JPCERT/CC",
-      "url": "https://www.jpcert.or.jp/wr/2026/wr260930.html#1",
-      "publishedAt": "2026-09-30T00:07:00.000Z"
     },
     {
       "id": "caf6402c7bc7aa5c",
@@ -477,16 +497,6 @@
       "publishedAt": "2026-09-27T15:58:48.000Z"
     },
     {
-      "id": "010a9a3e6b33b14d",
-      "title": "マイクロソフト、企業内アプリの実行基盤「Copilot Managed Runtime」プレビュー公開。Microsoft 365と同じテナント内でコード実行、管理者による集中管理も",
-      "summary": "マイクロソフトは、AIコーディングエージェントのMicrosoft Copilotなどで開発した社内アプリケーションを実行するためのセキュアな基盤「Copilot Managed Runtime」をパブリックプレビューとして公開しました。",
-      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
-      "category": "AIセキュリティ",
-      "source": "Publickey",
-      "url": "https://www.publickey1.jp/blog/26/copilot_managed_runtimemicrosoft_365.html",
-      "publishedAt": "2026-09-27T14:03:20.000Z"
-    },
-    {
       "id": "d0769d03e75340a3",
       "title": "AIの「見つけた」をうのみにしない Google、誤検知“ほぼゼロ”で脆弱性500件超を発見した検証の仕組み",
       "summary": "AIに脆弱性を探させると、未検証の仮説や誤検知が大量に届く。",
@@ -525,16 +535,6 @@
       "source": "ITmedia セキュリティ",
       "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/25/news042.html",
       "publishedAt": "2026-09-24T23:00:00.000Z"
-    },
-    {
-      "id": "ef5a24c1c26cd720",
-      "title": "「ヒューマン・イン・ザ・ループ万能説」崩壊 AIエージェント時代に企業が迫られる“防御の再設計”",
-      "summary": "AIエージェントが企業インフラを操作し、攻撃側もAIで侵入作業を分単位に圧縮する時代。",
-      "insight": "経営示唆: AI導入方針・利用ポリシーと、モデル／データ取扱いの責任分界を再確認してください。",
-      "category": "AIセキュリティ",
-      "source": "ITmedia セキュリティ",
-      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/23/news006.html",
-      "publishedAt": "2026-09-23T08:00:00.000Z"
     }
   ]
 }
