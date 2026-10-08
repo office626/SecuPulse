@@ -121,13 +121,21 @@ function renderNews() {
     const isVendor = item.category === "サイバーセキュリティ企業の取り組み";
     const cause =
       item.cause ||
-      (item.insight ? item.insight.split(/(?=深刻度・影響度:|顕著な取り組み:)/)[0]?.trim() : "");
-    const impact =
-      item.impact ||
       (item.insight
-        ? item.insight.match(/(?:深刻度・影響度:|顕著な取り組み:)[\s\S]*/)?.[0]
-        : "") ||
+        ? item.insight.split(/(?=当該企業の深刻度|社会・一般市民の深刻度|深刻度・影響度:|顕著な取り組み:)/)[0]?.trim()
+        : "");
+    const impactCompany =
+      item.impactCompany ||
+      (item.impact || "").match(/当該企業の深刻度・影響度:[^]*?(?=社会・一般市民の深刻度・影響度:|$)/)?.[0]?.trim() ||
       "";
+    const impactSociety =
+      item.impactSociety ||
+      (item.impact || "").match(/社会・一般市民の深刻度・影響度:[^]*/)?.[0]?.trim() ||
+      "";
+    const legacyImpact =
+      !impactCompany && !impactSociety
+        ? (item.impact || "").replace(/詳細・確定事実は出典原文の確認が必要です。?/g, "").trim()
+        : "";
     const severity = item.severity || "";
     const serviceTags =
       isVendor && Array.isArray(item.services) && item.services.length
@@ -135,6 +143,13 @@ function renderNews() {
             .map((s) => `<span class="service-tag">${escapeHtml(s)}</span>`)
             .join("")}</div>`
         : "";
+
+    const impactHtml = impactCompany || impactSociety
+      ? `
+        ${impactCompany ? `<p class="impact impact-company">${escapeHtml(impactCompany)}</p>` : ""}
+        ${impactSociety ? `<p class="impact impact-society">${escapeHtml(impactSociety)}</p>` : ""}
+      `
+      : `<p class="impact">${escapeHtml(legacyImpact)}</p>`;
 
     const card = document.createElement("article");
     card.className = `card${isVendor ? " card-vendor" : ""}`;
@@ -155,7 +170,7 @@ function renderNews() {
       ${serviceTags}
       <div class="analysis">
         <p class="cause">${escapeHtml(cause || item.insight || "")}</p>
-        <p class="impact">${escapeHtml(impact)}</p>
+        ${impactHtml}
       </div>
       <div class="card-foot">
         <span>出典: ${escapeHtml(item.source)}</span>

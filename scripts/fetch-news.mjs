@@ -606,78 +606,182 @@ function inferCauses(text, category) {
   return [...new Set(causes)].slice(0, 3);
 }
 
-function inferSeverity(text, category) {
-  let score = 1; // 1低 2中 3高
-  const reasons = [];
+function levelFromScore(score) {
+  return score >= 3 ? "高" : score === 2 ? "中" : "低";
+}
 
+function maxLevel(a, b) {
+  const rank = { 低: 1, 中: 2, 高: 3 };
+  return (rank[a] || 0) >= (rank[b] || 0) ? a : b;
+}
+
+/** 当該企業向け／社会・一般市民向けの二軸で深刻度を推定 */
+function inferDualImpact(text, category) {
   if (category === "AIセキュリティ対策・向上") {
-    score = 2;
-    reasons.push("対策の遅れは将来の規制対応・顧客信頼・事業継続に波及しうる");
+    let companyScore = 2;
+    const companyReasons = [
+      "導入・準拠の遅れは規制対応・監査・顧客説明の負担増につながる",
+    ];
     if (/必須|義務|罰則|規制|法/.test(text)) {
-      score = 3;
-      reasons.push("規制・義務化の文脈があり、未対応時のコンプライアンス影響が大きい");
+      companyScore = 3;
+      companyReasons.push("義務化・罰則の文脈があり、未対応時のコンプライアンス影響が大きい");
     }
-    return { level: score >= 3 ? "高" : "中", score, reasons };
+
+    let societyScore = 2;
+    const societyReasons = [
+      "安全なAI利用の土台整備は、利用者全体の安心・誤情報被害の抑制に寄与する",
+    ];
+    if (/個人|市民|消費者|利用者/.test(text)) {
+      societyScore = 3;
+      societyReasons.push("一般利用者の権利・安全に直結する枠組みとして社会的影響が大きい");
+    }
+
+    return {
+      company: {
+        level: levelFromScore(companyScore),
+        reasons: companyReasons.slice(0, 3),
+      },
+      society: {
+        level: levelFromScore(societyScore),
+        reasons: societyReasons.slice(0, 3),
+      },
+    };
   }
 
   if (category === "サイバーセキュリティ企業の取り組み") {
-    score = 2;
-    reasons.push("外部サービスの活用可否を検討する材料として影響度は中程度");
+    let companyScore = 2;
+    const companyReasons = [
+      "サービス拡充は当該企業の競争力・収益機会に直結する",
+    ];
     if (/提携|買収|SOC|MDR|全国|24時間/.test(text)) {
-      score = 3;
-      reasons.push("体制・カバー範囲の拡大により、調達・委託先選定への影響が大きい");
+      companyScore = 3;
+      companyReasons.push("体制拡大により事業規模・調達競争力への影響が大きい");
     }
-    return { level: score >= 3 ? "高" : "中", score, reasons };
+
+    let societyScore = 2;
+    const societyReasons = [
+      "防御サービスの普及は、結果として一般利用者・取引先の被害抑止に寄与しうる",
+    ];
+    if (/個人|消費者|中小|自治体|医療|金融/.test(text)) {
+      societyScore = Math.max(societyScore, 3);
+      societyReasons.push("生活基盤や公共性の高い領域への波及が見込まれる");
+    }
+
+    return {
+      company: {
+        level: levelFromScore(companyScore),
+        reasons: companyReasons.slice(0, 3),
+      },
+      society: {
+        level: levelFromScore(societyScore),
+        reasons: societyReasons.slice(0, 3),
+      },
+    };
   }
+
+  let companyScore = 1;
+  const companyReasons = [];
+  let societyScore = 1;
+  const societyReasons = [];
 
   const countHint = extractCountHint(text);
   if (countHint) {
     if (/万\s*件|万件/.test(countHint) || /,\d{3}/.test(countHint)) {
-      score = 3;
-      reasons.push(`影響規模の記載（${countHint}）があり、被害範囲が広い`);
+      companyScore = 3;
+      societyScore = 3;
+      companyReasons.push(`影響規模の記載（${countHint}）があり、対応コスト・信用毀損が大きい`);
+      societyReasons.push(`影響を受ける可能性のある人数・件数が大きく、市民生活への波及が広い`);
     } else {
-      score = Math.max(score, 2);
-      reasons.push(`影響規模の記載（${countHint}）がある`);
+      companyScore = Math.max(companyScore, 2);
+      societyScore = Math.max(societyScore, 2);
+      companyReasons.push(`影響規模の記載（${countHint}）があり、社内対応負荷が発生する`);
+      societyReasons.push(`影響規模の記載（${countHint}）があり、一部利用者・関係者に影響しうる`);
     }
   }
 
   if (/ランサム|事業停止|サービス停止|金銭的な被害|身代金|クリティカル|緊急/.test(text)) {
-    score = 3;
-    reasons.push("事業継続や金銭被害、緊急対応を要する兆候がある");
+    companyScore = 3;
+    companyReasons.push("事業継続や金銭被害、緊急対応を要する兆候がある");
+    societyScore = Math.max(societyScore, 2);
+    societyReasons.push("サービス停止等が起きれば利用者・取引先の日常生活や取引に支障が出うる");
   }
+
   if (/個人情報|顧客情報|会員情報|クレジットカード|マイナンバー|医療/.test(text)) {
-    score = Math.max(score, 2);
-    reasons.push("機微性の高い個人データが関与し、説明責任・報告義務のリスクが高い");
+    companyScore = Math.max(companyScore, 3);
+    companyReasons.push("機微データ関与により説明責任・報告義務・賠償リスクが高い");
+    societyScore = Math.max(societyScore, 3);
+    societyReasons.push("一般市民のプライバシー侵害・なりすまし・二次被害のリスクが高まる");
   }
+
   if (/委託|取引先|サプライ/.test(text)) {
-    score = Math.max(score, 2);
-    reasons.push("関係者が複数にまたがり、影響が自社外へ波及しやすい");
+    companyScore = Math.max(companyScore, 2);
+    companyReasons.push("委託・供給網を含むため、自社単独では収束しにくい");
+    societyScore = Math.max(societyScore, 2);
+    societyReasons.push("関係組織が増えるほど、間接的に市民・顧客へ影響が伝播しやすい");
   }
+
   if (/脆弱性|ゼロデイ/.test(text) && !/個人情報|漏洩|漏えい/.test(text)) {
-    score = Math.max(score, 2);
-    reasons.push("未修正なら広範なシステムに波及しうる技術的リスク");
+    companyScore = Math.max(companyScore, 2);
+    companyReasons.push("未修正なら自社システム全体へ波及しうる技術的リスク");
+    societyScore = Math.max(societyScore, 2);
+    societyReasons.push("同製品利用者全体に波及しうるため、社会的な注意喚起の意義がある");
   }
 
-  if (!reasons.length) {
-    reasons.push("公開情報からは限定的だが、放置すれば信頼毀損や再発リスクにつながる");
+  if (/ディープフェイク|偽情報|フィッシング/.test(text)) {
+    societyScore = Math.max(societyScore, 3);
+    societyReasons.push("一般市民が直接だまされやすい手口であり、社会的警戒が必要");
+    companyScore = Math.max(companyScore, 2);
+    companyReasons.push("ブランド悪用や顧客被害を通じて企業側にも信用リスクが及ぶ");
   }
 
-  const level = score >= 3 ? "高" : score === 2 ? "中" : "低";
-  return { level, score, reasons: reasons.slice(0, 3) };
+  if (!companyReasons.length) {
+    companyReasons.push("公開情報は限定的だが、放置すれば信用・再発対応の負担が増す");
+  }
+  if (!societyReasons.length) {
+    societyReasons.push("直接の市民被害は見えにくいが、類似手口の横展開には注意が必要");
+  }
+
+  return {
+    company: {
+      level: levelFromScore(companyScore),
+      reasons: companyReasons.slice(0, 3),
+    },
+    society: {
+      level: levelFromScore(societyScore),
+      reasons: societyReasons.slice(0, 3),
+    },
+  };
+}
+
+function formatDualImpact(dual) {
+  const companyText = `当該企業の深刻度・影響度: 【${dual.company.level}】${dual.company.reasons.join("／")}。`;
+  const societyText = `社会・一般市民の深刻度・影響度: 【${dual.society.level}】${dual.society.reasons.join("／")}。`;
+  return {
+    impactCompany: companyText,
+    impactSociety: societyText,
+    impact: `${companyText} ${societyText}`,
+    severity: maxLevel(dual.company.level, dual.society.level),
+    severityCompany: dual.company.level,
+    severitySociety: dual.society.level,
+  };
 }
 
 function buildAnalysis(item, category) {
   const text = `${item.title}。${item.summaryCandidate} ${item.bodyText || ""}`;
+  const dual = formatDualImpact(inferDualImpact(text, category));
 
   if (category === "サイバーセキュリティ企業の取り組み") {
     const services = extractServiceMenu(text);
     const brief = buildCompanyBrief(item, services);
-    const severity = inferSeverity(text, category);
     return {
       cause: brief.servicesText,
-      impact: `${brief.highlightsText} 影響度: 【${severity.level}】${severity.reasons.join("／")}。`,
-      severity: severity.level,
-      insight: `${brief.servicesText} ${brief.highlightsText}`,
+      impact: dual.impact,
+      impactCompany: dual.impactCompany,
+      impactSociety: dual.impactSociety,
+      severity: dual.severity,
+      severityCompany: dual.severityCompany,
+      severitySociety: dual.severitySociety,
+      insight: `${brief.servicesText} ${brief.highlightsText} ${dual.impact}`,
       companySummary: brief.companySummary,
       services: services,
       highlights: brief.highlightsText,
@@ -685,24 +789,19 @@ function buildAnalysis(item, category) {
   }
 
   const causes = inferCauses(text, category);
-  const severity = inferSeverity(text, category);
-
   const causeLabel =
     category === "AIセキュリティ対策・向上" ? "背景・要因" : "原因・不備";
   const causeText = `${causeLabel}: ${causes.join("／")}。`;
 
-  const impactLead =
-    category === "AIセキュリティ対策・向上"
-      ? `深刻度・影響度: 【${severity.level}】機関・企業の対策動向として注目度が高く、`
-      : `深刻度・影響度: 【${severity.level}】`;
-
-  const impactText = `${impactLead}${severity.reasons.join("／")}。`;
-
   return {
     cause: causeText,
-    impact: impactText,
-    severity: severity.level,
-    insight: `${causeText} ${impactText}`,
+    impact: dual.impact,
+    impactCompany: dual.impactCompany,
+    impactSociety: dual.impactSociety,
+    severity: dual.severity,
+    severityCompany: dual.severityCompany,
+    severitySociety: dual.severitySociety,
+    insight: `${causeText} ${dual.impact}`,
   };
 }
 
@@ -800,7 +899,11 @@ async function main() {
         summary,
         cause: analysis.cause,
         impact: analysis.impact,
+        impactCompany: analysis.impactCompany || "",
+        impactSociety: analysis.impactSociety || "",
         severity: analysis.severity,
+        severityCompany: analysis.severityCompany || "",
+        severitySociety: analysis.severitySociety || "",
         insight: analysis.insight,
         services: analysis.services || [],
         highlights: analysis.highlights || "",

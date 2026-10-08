@@ -358,9 +358,15 @@ a:hover {
   border-radius: 0 8px 8px 0;
 }
 
-.impact {
+.impact,
+.impact-company {
   border-left-color: var(--warn);
   background: #fffaf3;
+}
+
+.impact-society {
+  border-left-color: #0369a1;
+  background: #f0f9ff;
 }
 
 .card-foot {
