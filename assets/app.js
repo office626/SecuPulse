@@ -18,9 +18,18 @@ const els = {
 function badgeClass(category) {
   if (category === "AIセキュリティ") return "ai";
   if (category === "個人情報漏洩") return "leak";
+  if (category === "AIセキュリティ対策・向上") return "measure";
+  if (category === "サイバーセキュリティ企業の取り組み") return "vendor";
   if (category === "規制・ガバナンス") return "reg";
   if (category === "インシデント対応・被害拡大") return "incident";
   if (category === "サプライチェーン／委託先") return "supply";
+  return "";
+}
+
+function severityClass(level) {
+  if (level === "高") return "sev-high";
+  if (level === "中") return "sev-mid";
+  if (level === "低") return "sev-low";
   return "";
 }
 
@@ -42,6 +51,8 @@ function formatDate(iso) {
 function renderStats(data) {
   const by = data.stats.byCategory || {};
   const other =
+    (by["AIセキュリティ対策・向上"] || data.stats.aiMeasures || 0) +
+    (by["サイバーセキュリティ企業の取り組み"] || data.stats.vendors || 0) +
     (by["規制・ガバナンス"] || 0) +
     (by["インシデント対応・被害拡大"] || 0) +
     (by["サプライチェーン／委託先"] || 0);
@@ -107,16 +118,45 @@ function renderNews() {
   }
 
   for (const item of items) {
+    const isVendor = item.category === "サイバーセキュリティ企業の取り組み";
+    const cause =
+      item.cause ||
+      (item.insight ? item.insight.split(/(?=深刻度・影響度:|顕著な取り組み:)/)[0]?.trim() : "");
+    const impact =
+      item.impact ||
+      (item.insight
+        ? item.insight.match(/(?:深刻度・影響度:|顕著な取り組み:)[\s\S]*/)?.[0]
+        : "") ||
+      "";
+    const severity = item.severity || "";
+    const serviceTags =
+      isVendor && Array.isArray(item.services) && item.services.length
+        ? `<div class="service-tags">${item.services
+            .map((s) => `<span class="service-tag">${escapeHtml(s)}</span>`)
+            .join("")}</div>`
+        : "";
+
     const card = document.createElement("article");
-    card.className = "card";
+    card.className = `card${isVendor ? " card-vendor" : ""}`;
     card.innerHTML = `
       <div class="card-top">
         <span class="badge ${badgeClass(item.category)}">${item.category}</span>
+        ${
+          severity
+            ? `<span class="badge severity ${severityClass(severity)}">${
+                isVendor ? "注目度" : "深刻度"
+              } ${escapeHtml(severity)}</span>`
+            : ""
+        }
         <span class="date">${formatDate(item.publishedAt)}</span>
       </div>
       <h3><a href="${item.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h3>
       <p class="summary">${escapeHtml(item.summary)}</p>
-      <p class="insight">${escapeHtml(item.insight)}</p>
+      ${serviceTags}
+      <div class="analysis">
+        <p class="cause">${escapeHtml(cause || item.insight || "")}</p>
+        <p class="impact">${escapeHtml(impact)}</p>
+      </div>
       <div class="card-foot">
         <span>出典: ${escapeHtml(item.source)}</span>
         <a href="${item.url}" target="_blank" rel="noopener noreferrer">原文を読む →</a>
