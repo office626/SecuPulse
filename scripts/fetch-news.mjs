@@ -696,7 +696,7 @@ function buildAnalysis(item, category) {
       ? `深刻度・影響度: 【${severity.level}】機関・企業の対策動向として注目度が高く、`
       : `深刻度・影響度: 【${severity.level}】`;
 
-  const impactText = `${impactLead}${severity.reasons.join("／")}。詳細・確定事実は出典原文の確認が必要です。`;
+  const impactText = `${impactLead}${severity.reasons.join("／")}。`;
 
   return {
     cause: causeText,

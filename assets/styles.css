@@ -80,6 +80,13 @@ a:hover {
   max-width: 40rem;
 }
 
+.disclaimer {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  max-width: 40rem;
+}
+
 .meta-pill {
   display: inline-flex;
   align-items: center;
