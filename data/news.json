@@ -1,7 +1,7 @@
 {
   "site": "SecuPulse",
   "title": "AI時代の情報セキュリティ・個人情報漏洩ニュースサイト",
-  "updatedAt": "2026-10-31T16:58:23.629Z",
+  "updatedAt": "2026-11-01T17:44:33.732Z",
   "timezone": "Asia/Tokyo",
   "categories": [
     "AIセキュリティ",
@@ -67,6 +67,25 @@
   ],
   "errors": [],
   "items": [
+    {
+      "id": "8972ef4a925de3be",
+      "title": "GitHub、「Copilot Fusion」正式リリース。タスクに応じて最適なAIモデル選択で高性能かつ低コストに。GitHub Universe 2026",
+      "summary": "GitHubは、米サンフランシスコで10月28日と29日の2日間開催した年次イベント「GitHub Universe 2026」で、新機能「GitHub Copilot Fusion」の正式リリースを発表しました。",
+      "cause": "原因・不備: AIシステム固有のリスク管理（データ、モデル、利用統制）が追いついていなかった可能性。",
+      "impact": "当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。 社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
+      "impactCompany": "当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。",
+      "impactSociety": "社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
+      "severity": "低",
+      "severityCompany": "低",
+      "severitySociety": "低",
+      "insight": "原因・不備: AIシステム固有のリスク管理（データ、モデル、利用統制）が追いついていなかった可能性。 当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。 社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
+      "services": [],
+      "highlights": "",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/githubcopilot_fusionaigithub_universe_2026.html",
+      "publishedAt": "2026-11-01T14:39:39.000Z"
+    },
     {
       "id": "a2cfea6c275f30a1",
       "title": "総務省、GMO攻撃者サイトの「ブロッキング」を通信各社に要請 報道",
@@ -864,25 +883,6 @@
       "source": "ITmedia Enterprise",
       "url": "https://www.itmedia.co.jp/enterprise/articles/2610/29/news015.html",
       "publishedAt": "2026-10-28T22:00:00.000Z"
-    },
-    {
-      "id": "6b316fd0ed46ff6c",
-      "title": "オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026",
-      "summary": "オラクルは、社員が業務アプリをAIで自動的に生成しOracle Cloudにデプロイして利用できる「Oracle App Composer」を、米国ラスベガスで開催中の年次イベント「Oracle AI World 2026」で発表しました。",
-      "cause": "原因・不備: AIシステム固有のリスク管理（データ、モデル、利用統制）が追いついていなかった可能性。",
-      "impact": "当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。 社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
-      "impactCompany": "当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。",
-      "impactSociety": "社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
-      "severity": "低",
-      "severityCompany": "低",
-      "severitySociety": "低",
-      "insight": "原因・不備: AIシステム固有のリスク管理（データ、モデル、利用統制）が追いついていなかった可能性。 当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。 社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
-      "services": [],
-      "highlights": "",
-      "category": "AIセキュリティ",
-      "source": "Publickey",
-      "url": "https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html",
-      "publishedAt": "2026-10-28T13:43:00.000Z"
     },
     {
       "id": "8448c05289bde9a2",
