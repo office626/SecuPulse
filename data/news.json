@@ -1,7 +1,7 @@
 {
   "site": "SecuPulse",
   "title": "AI時代の情報セキュリティ・個人情報漏洩ニュースサイト",
-  "updatedAt": "2026-11-07T17:34:52.725Z",
+  "updatedAt": "2026-11-08T17:44:51.929Z",
   "timezone": "Asia/Tokyo",
   "categories": [
     "AIセキュリティ",
@@ -67,6 +67,25 @@
   ],
   "errors": [],
   "items": [
+    {
+      "id": "006c5c9d1b3fee2e",
+      "title": "MCP仕様を完全にサポートしたMCP公式のRuby SDKが登場。「MCP SDK Tier 1」に到達と",
+      "summary": "Linux Foundation傘下でMCP（Model Context Protocol）の仕様策定を行っている「Agentic AI Foundation（AAIF）」は、MCP公式のRuby SDKがMCP仕様を完全にサポートした「…",
+      "cause": "原因・不備: AIシステム固有のリスク管理（データ、モデル、利用統制）が追いついていなかった可能性。",
+      "impact": "当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。 社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
+      "impactCompany": "当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。",
+      "impactSociety": "社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
+      "severity": "低",
+      "severityCompany": "低",
+      "severitySociety": "低",
+      "insight": "原因・不備: AIシステム固有のリスク管理（データ、モデル、利用統制）が追いついていなかった可能性。 当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。 社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
+      "services": [],
+      "highlights": "",
+      "category": "AIセキュリティ",
+      "source": "Publickey",
+      "url": "https://www.publickey1.jp/blog/26/mcpmcpruby_sdkmcp_sdk_tier_1.html",
+      "publishedAt": "2026-11-08T14:06:29.000Z"
+    },
     {
       "id": "cc4673fe98f8887c",
       "title": "IPA、ランサムウェア被害組織の生の声から得た“11の教訓”を公開",
@@ -920,25 +939,6 @@
       "category": "AIセキュリティ",
       "source": "ITmedia セキュリティ",
       "url": "https://www.itmedia.co.jp/enterprise/articles/2610/30/news039.html",
-      "publishedAt": "2026-10-30T03:00:00.000Z"
-    },
-    {
-      "id": "09c3dd8282d7ce42",
-      "title": "コードを伏せても20ドル以下でツールを再現 英AISIがAIエージェントで検証",
-      "summary": "コードさえ公開しなければ技術は守れる。",
-      "cause": "原因・不備: AIシステム固有のリスク管理（データ、モデル、利用統制）が追いついていなかった可能性。",
-      "impact": "当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。 社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
-      "impactCompany": "当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。",
-      "impactSociety": "社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
-      "severity": "低",
-      "severityCompany": "低",
-      "severitySociety": "低",
-      "insight": "原因・不備: AIシステム固有のリスク管理（データ、モデル、利用統制）が追いついていなかった可能性。 当該企業の深刻度・影響度: 【低】公開情報は限定的だが、放置すれば信用・再発対応の負担が増す。 社会・一般市民の深刻度・影響度: 【低】直接の市民被害は見えにくいが、類似手口の横展開には注意が必要。",
-      "services": [],
-      "highlights": "",
-      "category": "AIセキュリティ",
-      "source": "ITmedia セキュリティ",
-      "url": "https://www.itmedia.co.jp/enterprise/articles/2610/30/news033.html",
       "publishedAt": "2026-10-30T03:00:00.000Z"
     },
     {
